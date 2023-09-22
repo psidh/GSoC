@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Organization Filter</title>
+  </head>
+  <body class="bg-gray-200">
+    <header class="bg-blue-900 p-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-xl font-semibold"
+          >Organization Filter</a
+        >
+        <!-- Add navigation links if needed -->
+      </nav>
+    </header>
+
+    <div class="container mx-auto m-4 min-h-screen">
+      <h1 class="text-2xl font-semibold mb-4">Organization Filter</h1>
+
+      <!-- Tech Filter -->
+      <h2 class="text-xl font-semibold mb-2">Filter by Tech</h2>
+      
+      <div id="tech-filter" class="space-x-4 mb-4">
+        <!-- JavaScript checkbox -->
+        <ul class="w-auto text-sm font-medium text-gray-900 bg-gray-200 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+            <li class="inline-block border-gray-200  dark:border-gray-600 py-2 bg-yellow-300 rounded-l-md">
+                <div class="flex items-center px-4">
+                    <input id="javascript-checkbox" type="checkbox" value="javascript" class="checkbox-style">
+                    <label for="javascript-checkbox" class="checkbox-label pl-2 ">JavaScript</label>
+                </div>
+            </li>
+            <li class="inline-block border-gray-200 dark:border-gray-600 py-2 bg-blue-500">
+                <div class="flex items-center px-4">
+                    <input id="python-checkbox" type="checkbox" value="python" class="checkbox-style">
+                    <label for="python-checkbox" class="checkbox-label pl-2 text-white">Python</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200  dark:border-gray-600 py-2 bg-red-700">
+                <div class="flex items-center px-4">
+                    <input id="java-checkbox" type="checkbox" value="java" class="checkbox-style">
+                    <label for="java-checkbox" class="checkbox-label pl-2 text-white">Java</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200 dark:border-gray-600 py-2 bg-purple-500">
+                <div class="flex items-center px-4">
+                    <input id="php-checkbox" type="checkbox" value="php" class="checkbox-style">
+                    <label for="php-checkbox" class="checkbox-label pl-2 text-white">PHP</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200 dark:border-gray-600 py-2 bg-green-700">
+                <div class="flex items-center px-4">
+                    <input id="cpp-checkbox" type="checkbox" value="cpp" class="checkbox-style">
+                    <label for="cpp-checkbox" class="checkbox-label pl-2 text-white">C++</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200  dark:border-gray-600 py-2 bg-red-900">
+                <div class="flex items-center px-4">
+                    <input id="ruby-checkbox" type="checkbox" value="ruby" class="checkbox-style">
+                    <label for="ruby-checkbox" class="checkbox-label pl-2 text-white">Ruby</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200 dark:border-gray-600 py-2 bg-blue-800">
+                <div class="flex items-center px-4">
+                    <input id="typescript-checkbox" type="checkbox" value="typescript" class="checkbox-style">
+                    <label for="typescript-checkbox" class="checkbox-label pl-2 text-white">Typescript</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200  dark:border-gray-600 py-2 bg-blue-400">
+                <div class="flex items-center px-4">
+                    <input id="go-checkbox" type="checkbox" value="go" class="checkbox-style">
+                    <label for="go-checkbox" class="checkbox-label pl-2 text-white">go</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200 dark:border-gray-600 py-2 bg-green-900">
+                <div class="flex items-center px-4">
+                    <input id="django-checkbox" type="checkbox" value="django" class="checkbox-style">
+                    <label for="django-checkbox" class="checkbox-label pl-2 text-white">Django</label>
+                </div>
+            </li>
+            <li class="inline-block  border-gray-200 dark:border-gray-600 py-2 bg-blue-500">
+                <div class="flex items-center px-4">
+                    <input id="postgresql-checkbox" type="checkbox" value="postgresql" class="checkbox-style">
+                    <label for="postgresql-checkbox" class="checkbox-label pl-2 text-white">PostgreSQL</label>
+                </div>
+            </li>
+            <!-- Add more checkboxes here -->
+        </ul>
+        <!-- Add checkboxes for other technologies -->
+      </div>
+
+      <!-- Topics Filter -->
+      <h2 class="text-xl font-semibold mb-2">Filter by Topics</h2>
+      <div id="topics-filter" class="space-x-4 mb-4">
+        <!-- Web checkbox -->
+        <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+          <li class="w-full  border-gray-200  dark:border-gray-600">
+            <div class="flex items-center pl-3">
+              <input
+                id="web-checkbox"
+                type="checkbox"
+                value="web"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+              />
+              <label
+                for="web-checkbox"
+                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Web</label
+              >
+            </div>
+          </li>
+
+          <li class="w-full  border-gray-200 dark:border-gray-600">
+            <div class="flex items-center pl-3">
+              <input
+                id="database-checkbox"
+                type="checkbox"
+                value="database"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+              />
+              <label
+                for="database-checkbox"
+                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Database</label
+              >
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Add checkboxes for other topics -->
+      </div>
+
+      <!-- Result -->
+      <div id="result">
+        
+      </div>
+    </div>
+
+    <footer class="bg-blue-500 p-4 mt-8">
+      <div class="container mx-auto text-white text-center">
+        &copy; 2023 Organization Filter
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
